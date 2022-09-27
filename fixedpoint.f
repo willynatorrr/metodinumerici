@@ -1,5 +1,6 @@
       PROGRAM fixedpoint
 C     Il codice calcola il punto fisso della funzione 1/sin(x) con un'approssimazione di 1e-6, numero massimo di interazioni itmax=50, numero di interazioni it
+C     Modifica di prova
       implicit none
       integer it, itmax
       real xold, xnew, eps, err
