@@ -1,5 +1,6 @@
       PROGRAM sommanumeripari
 C     Il codice calcola la somma dei primi 50 numeri pari
+C     MARIO WAO
       implicit none
       integer i, n
       n=0
