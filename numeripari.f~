@@ -1,0 +1,10 @@
+      PROGRAM sommanumeripari
+C     Il codice calcola la somma dei primi 50 numeri pari
+      implicit none
+      integer i, n
+      n=0
+      do i=2,100,2
+         n=n+i
+      end do
+      write(6,*) 'La somma dei primi 50 numeri pari e'': ', n
+      END
