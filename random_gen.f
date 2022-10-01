@@ -1,0 +1,14 @@
+      subroutine random_stduniform(u)
+      implicit none
+      real,intent(out) :: u
+      real :: r
+      call random_number(r)
+      u = 1 - r
+      end subroutine random_stduniform
+      program random_gen
+C     il codice genera numeri random distribuiti uniformemente in [0,1]
+      implicit none
+      real :: r
+      call random_stduniform(r)
+      print*, r
+      end

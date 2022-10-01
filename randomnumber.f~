@@ -1,0 +1,7 @@
+      PROGRAM diocane
+C     Il codice scrive numeri random in output
+      implicit none
+      real r
+      call randomnumber(r)
+      write(6,*) 'diocane: ', r
+      END
