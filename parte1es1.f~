@@ -1,0 +1,7 @@
+C     ALGORITMO DI METROPOLIS-HASTINGS
+C     Applicazione per la gaussiana
+C     Parte 1 - Generazione campione stocastico
+C     IANIA WILLIAM --- VALENTINO ALESSANDRA
+C     Metodi Numerici per la Fisica - a.a. 2022/2023
+C     Parto da x_0.eq.pi. Genero un numero casuale nell'intervallo (x_0-delta,x-O+delta) con delta.eq.1E-2
+C     Dichiaro la subroutine che mi permette di fare ciò nel programma main
