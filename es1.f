@@ -28,16 +28,7 @@ C     Avvio il programma che scrive nel file 'dati.dat' il campione generato
       end do
       end program
 
-C     Parto da x_0=pi.
-C     Dichiaro la function che genero un numero casuale nell'intervallo [a,b]
-      function random_uniform(a,b) result(xtry)
-      implicit none
-      real, intent(in) :: a, b
-      real :: u
-      real :: xtry
-      call random_stduniform(u) !genera un numero u casuale in (0,1]
-      xtry = (b - a ) * u + a !genera un numero xtry casuale
-      end function random_uniform
+
 
       
 C     Dichiaro la function che genera il rapporto fra le probabilità gaussiane
@@ -55,6 +46,17 @@ C     Dichiaro la function che genera il rapporto fra le probabilità gaussiane
       call random_number(r)
       w = 1 - r
       end subroutine random_stduniform
+
+C     Parto da x_0=pi.
+C     Dichiaro la function che genero un numero casuale nell'intervallo [a,b]
+      function random_uniform(a,b) result(xtry)
+      implicit none
+      real, intent(in) :: a, b
+      real :: u
+      real :: xtry
+      call random_stduniform(u) !genera un numero u casuale in (0,1]
+      xtry = (b - a ) * u + a !genera un numero xtry casuale
+      end function random_uniform
       
 
 
