@@ -10,7 +10,7 @@ import pylab
 import math
 
 #importo il file dei dati
-xk = numpy.loadtxt('dati.dat', usecols = 1,  unpack = True)
+xk = numpy.loadtxt('dati.dat',  unpack = True)
 N=110000
 
 #media e deviazione standard: mean()=media,
