@@ -10,7 +10,7 @@ import pylab
 import math
 
 #importo il file dei dati
-xk = numpy.loadtxt('dati.dat', unpack = True)
+xk = numpy.loadtxt('dati.dat', usecols = 1,  unpack = True)
 N=110000
 
 #media e deviazione standard: mean()=media,
@@ -19,9 +19,9 @@ data = [v]
 print ("The mean is =",numpy.mean(data))
 
 st_dev = numpy.std(data)
-print("Standard deviation of the data:", st_dev/numpy.sqrt(N))
+print("Standard deviation of the data:", st_dev/numpy.sqrt(N*(N-1)))
 
-print("<x>=", numpy.mean(data), "+-", st_dev/numpy.sqrt(N))
+print("<x>=", numpy.mean(data), "+-", st_dev/numpy.sqrt(N*(N-1)))
 
 
 
